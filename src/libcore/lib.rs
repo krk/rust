@@ -198,7 +198,7 @@ mod unit;
 // different repository, rust-lang-nursery/stdsimd. That's why the setup here is
 // a bit wonky.
 #[path = "../stdsimd/coresimd/mod.rs"]
-#[allow(missing_docs, missing_debug_implementations, dead_code)]
+#[allow(missing_docs, missing_debug_implementations, dead_code, unused_imports)]
 #[unstable(feature = "stdsimd", issue = "48556")]
 #[cfg(not(stage0))] // allow changes to how stdsimd works in stage0
 mod coresimd;
